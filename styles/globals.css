@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /**
- * Global style defaults and dark mode palette.
+ * Global style defaults and cyberpunk neon palette.
  */
 html,
 body,
@@ -12,5 +12,23 @@ body,
 }
 
 body {
-  @apply bg-white text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+  @apply antialiased transition-colors duration-300;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(6, 182, 212, 0.2), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(236, 72, 153, 0.18), transparent 36%),
+    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.24), transparent 45%),
+    #050816;
+  color: #dbeafe;
+}
+
+.cyber-grid {
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.neon-border {
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  box-shadow: inset 0 0 20px rgba(14, 165, 233, 0.15), 0 0 28px rgba(14, 165, 233, 0.18);
 }

@@ -5,9 +5,9 @@ export default function MailModal({ mail, onClose }) {
   if (!mail) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={onClose}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#02030b]/80 backdrop-blur-sm p-4" onClick={onClose}>
       <div
-        className="w-full max-w-2xl rounded-2xl border border-neon-pink/30 bg-slate-900 p-6 text-slate-100 shadow-2xl transition-all duration-300"
+        className="w-full max-w-2xl rounded-2xl border border-fuchsia-400/40 bg-[#060a1d] p-6 text-slate-100 shadow-[0_0_30px_rgba(217,70,239,0.25)] shadow-2xl transition-all duration-300"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="mb-4 flex items-center justify-between">

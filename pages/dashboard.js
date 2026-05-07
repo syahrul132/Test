@@ -13,7 +13,6 @@ export default function Dashboard() {
   const [selectedMail, setSelectedMail] = useState(null);
   const [domain, setDomain] = useState('tempmailx.app');
 
-
   const loadConfig = async () => {
     const res = await fetch('/api/config');
     const data = await res.json();

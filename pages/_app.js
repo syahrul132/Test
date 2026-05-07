@@ -24,8 +24,8 @@ export default function App({ Component, pageProps }) {
   }, [dark]);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
-      <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.2),_transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(139,92,246,0.22),_transparent_40%)] dark:bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.2),_transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(139,92,246,0.22),_transparent_40%)] bg-white text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div className="min-h-screen text-slate-100 transition-colors duration-300">
+      <div className="cyber-grid min-h-screen">
         <Navbar dark={dark} setDark={setDark} />
         <main className="mx-auto max-w-6xl px-4 pb-16 pt-8 md:px-8">
           <Component {...pageProps} dark={dark} />
