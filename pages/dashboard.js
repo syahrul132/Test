@@ -11,7 +11,7 @@ export default function Dashboard() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [selectedMail, setSelectedMail] = useState(null);
-  const [domain, setDomain] = useState('tempmailx.app');
+  const [domain, setDomain] = useState('morvo.me');
 
   const loadConfig = async () => {
     const res = await fetch('/api/config');

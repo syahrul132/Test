@@ -32,7 +32,7 @@ A futuristic temporary email web app built with **Next.js** and **Tailwind CSS**
 2. Update `NEXT_PUBLIC_TEMPMAIL_DOMAIN` in `.env.local`:
 
    ```env
-   NEXT_PUBLIC_TEMPMAIL_DOMAIN=mail.yourdomain.com
+   NEXT_PUBLIC_TEMPMAIL_DOMAIN=mail.morvo.me
    ```
 
 3. Restart development server so env is reloaded.
@@ -44,7 +44,7 @@ The generated temp address will use this domain automatically.
 If app is hosted on Vercel:
 
 1. In Vercel project, open **Settings → Domains**.
-2. Add your domain/subdomain (recommended subdomain like `mail.yourdomain.com`).
+2. Add your domain/subdomain (recommended subdomain like `mail.morvo.me`).
 3. At your DNS provider, add the records requested by Vercel.
 4. Wait until status is **Valid Configuration**.
 
@@ -63,7 +63,7 @@ Open `http://localhost:3000`.
 2. Go to [Vercel](https://vercel.com/new).
 3. Import the GitHub repository.
 4. Add env var in Vercel:
-   - `NEXT_PUBLIC_TEMPMAIL_DOMAIN=mail.yourdomain.com`
+   - `NEXT_PUBLIC_TEMPMAIL_DOMAIN=mail.morvo.me`
 5. Keep defaults (Framework: Next.js).
 6. Click **Deploy**.
 
